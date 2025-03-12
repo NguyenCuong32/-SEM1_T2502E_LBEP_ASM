@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    float x,y ;
+    float g = 9.8;
+    x = 5;
+    y = (-0.5*g*x*x)+x;
+    printf("vi tri vien dan y(5) = %.2f\r\n", y=-0.5*9.8*5*5+5);
+    printf("nhap x tu ban phim");
+    scanf("%f",&x);
+
+    printf("vi tri cua vien dan khi x = %.2f la :y(%2.f)= %.2f\n",x,x,y);
+    
+    if(y>50||y<30)
+    {
+        printf("vien dan ra ngoai");
+    }
+    if(y<=50 && y>=30)
+    {
+        printf("vien dan chng dich");
+    }
+
+    
+
+    return 0;
+}
