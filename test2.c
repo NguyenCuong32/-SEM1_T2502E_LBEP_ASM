@@ -18,7 +18,7 @@ int main()
     do
     {
         printf("The element %d of the array is %d\n", i+1, Array[i]);
-        i++; // Increment i to avoid infinite loop
+        i++;
     } while (i < 6); 
 
     //function to find the largest of the Array and display to screen.
