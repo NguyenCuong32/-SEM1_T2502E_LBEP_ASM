@@ -1,39 +1,22 @@
 #include <stdio.h>
-//2.1
-void b21(){
-    int array[6] = {7,6,3,34,10,710};
-    for(int i=0;i<6;i++){
-        printf(" The element %d of the array is %d \r\n", i+1, array[i]);
-    }
-    printf("\r\n");
-    int i=0;
-    while (i<6)
-    {
-        printf("The element %d of the array is %d \r\n", i+1, array[i]);
-        i++;
-    }
-    printf("\r\n");
-    i = 0;
-    do
-    {
-        printf(" The element %d of the array is %d \r\n", i+1, array[i]);
-        i++;
-    } while (i<6);
-}
-//2.2
-int findLargest22(int array[], int i){
-    int largest = array[0];
-    for (int i=1;i<6;i++){
-        if (array[i]>largest){
-            largest = array[i];
-        }
-    }
-    return largest;
+//1.1
+double tinh_y(double x) {
+    double g = 9.8;
+    return -0.5 * g * x * x + x;
 }
 int main(){
-    b21();
-    int array[6] = {7,6,3,34,10,710};
-    int largest = findLargest22(array, 6);
-    printf("Largest element is: %d \r\n", largest);
+    double x,y;
+//1.2
+    x = 5;
+    y = tinh_y(x);
+    printf("The position of bullet: y(%.2f) = %.2f \r\n", x, y);
+    scanf("%d", &x);
+    y = tinh_y(x);
+//1.3
+    if (y > 50 || y < 30) {
+        printf("The bullet got out \r\n");
+    } else {
+        printf("The bullet got a goal \r\n");
+    }
     return 0;
 }
