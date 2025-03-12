@@ -21,10 +21,10 @@ int main()
     // check y(x)
     if (yx > 50 || yx < 30) 
     {
-        printf("The bullet got out.);
+        printf("The bullet got out.");
     } else if ( yx <= 50 && yx >= 30 )
        {
-         printf("The bullet got a goal.);
+         printf("The bullet got a goal.");
     }
 
 
